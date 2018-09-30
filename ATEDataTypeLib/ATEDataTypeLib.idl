@@ -1,0 +1,18 @@
+// ATEDataTypeLib.idl : IDL source for ATEDataTypeLib
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ATEDataTypeLib.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(4998C157-D7C8-474A-B9AE-83260F7268DE),
+	version(1.0),
+]
+library ATEDataTypeLibLib
+{
+	importlib("stdole2.tlb");
+};
+
