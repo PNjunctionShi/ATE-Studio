@@ -8,7 +8,55 @@ import "oaidl.idl";
 import "ocidl.idl";
 
 [
-	uuid(4998C157-D7C8-474A-B9AE-83260F7268DE),
+	object,
+	uuid(2BB8234E-CC76-4D78-BD8A-68584DD5B319),
+	dual,
+	pointer_default(unique)
+]
+interface IRemark : IDispatch {
+	[propget, id(1)] HRESULT Value([out, retval] BSTR* pVal);
+	[propput, id(1)] HRESULT Value([in] BSTR newVal);
+	[propget, id(2)] HRESULT SubRemarks([out, retval] IRemarks* pVal);
+	[propput, id(2)] HRESULT SubRemarks([in] IRemarks newVal);
+};
+[
+	object,
+	uuid(FDEE2A0C-3519-4A93-B005-DE011BB39984),
+	dual,
+	pointer_default(unique)
+]
+interface IRemarks : IDispatch {
+	[id(1)] HRESULT AddRemark([out, retval] IRemark ** ppRemark);
+	[propget, id(2)] HRESULT Count([out, retval] LONG* pnCount);
+	[propget, id(DISPID_VALUE)] HRESULT Item([out, retval] IRemark ** ppRemark);
+	[propget, id(IDSPID_NEWENUM)] HRESULT _NewEnum([out, retval] IUnknown** ppEnum);
+};
+[
+	object,
+	uuid(38D1DC1A-C92A-4D04-AEDF-FFC5C1CA6E09),
+	dual,
+	pointer_default(unique)
+]
+interface IColumns : IDispatch {
+};
+[
+	object,
+	uuid(22792973-9F35-4089-8491-CAD658732BE9),
+	dual,
+	pointer_default(unique)
+]
+interface ITable : IDispatch {
+};
+[
+	object,
+	uuid(720ED246-1832-4FDC-BD27-72E9EC13C209),
+	dual,
+	pointer_default(unique)
+]
+interface ITables : IDispatch {
+};
+[
+	uuid(753D2A23-C6D8-407D-84F8-5E17C90F6E6D),
 	version(1.0),
 ]
 library ATEDataTypeLibLib
