@@ -31,6 +31,9 @@
     <ClCompile Include="ATEDataTypeLib_i.c">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -47,6 +50,9 @@
     </ClInclude>
     <ClInclude Include="ATEDataTypeLib_i.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ATEDataTypes.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

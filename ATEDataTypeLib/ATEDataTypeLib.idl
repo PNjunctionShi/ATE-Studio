@@ -9,6 +9,18 @@ import "ocidl.idl";
 
 [
 	object,
+	uuid(F5A367FA-9E81-4359-904C-9F0F4CB0E156),
+	dual,
+	pointer_default(unique)
+]
+interface IATEBaseData : IDispatch {
+	[propget, id(1)] HRESULT StrValue([out, retval] BSTR* pVal);
+	[propput, id(1)] HRESULT StrValue([in] BSTR newVal);
+	[propget, id(2)] HRESULT Value([out, retval] DOUBLE* pVal);
+};
+interface IRemarks;
+[
+	object,
 	uuid(2BB8234E-CC76-4D78-BD8A-68584DD5B319),
 	dual,
 	pointer_default(unique)
@@ -16,8 +28,8 @@ import "ocidl.idl";
 interface IRemark : IDispatch {
 	[propget, id(1)] HRESULT Value([out, retval] BSTR* pVal);
 	[propput, id(1)] HRESULT Value([in] BSTR newVal);
-	[propget, id(2)] HRESULT SubRemarks([out, retval] IRemarks* pVal);
-	[propput, id(2)] HRESULT SubRemarks([in] IRemarks newVal);
+	[propget, id(2)] HRESULT SubRemarks([out, retval] IRemarks** pVal);
+	[propput, id(2)] HRESULT SubRemarks([in] IRemarks* newVal);
 };
 [
 	object,
@@ -29,7 +41,7 @@ interface IRemarks : IDispatch {
 	[id(1)] HRESULT AddRemark([out, retval] IRemark ** ppRemark);
 	[propget, id(2)] HRESULT Count([out, retval] LONG* pnCount);
 	[propget, id(DISPID_VALUE)] HRESULT Item([out, retval] IRemark ** ppRemark);
-	[propget, id(IDSPID_NEWENUM)] HRESULT _NewEnum([out, retval] IUnknown** ppEnum);
+	[propget, id(DISPID_NEWENUM)] HRESULT _NewEnum([out, retval] IUnknown** ppEnum);
 };
 [
 	object,
