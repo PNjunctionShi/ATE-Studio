@@ -49,7 +49,7 @@ interface IRemarks : IDispatch {
 	dual,
 	pointer_default(unique)
 ]
-interface IColumn : IDispatch {
+interface IATEColumn : IDispatch {
 };
 [
 	object,
@@ -57,7 +57,7 @@ interface IColumn : IDispatch {
 	dual,
 	pointer_default(unique)
 ]
-interface IColumns : IDispatch {
+interface IATEColumns : IDispatch {
 };
 [
 	object,
@@ -65,7 +65,7 @@ interface IColumns : IDispatch {
 	dual,
 	pointer_default(unique)
 ]
-interface ITable : IDispatch {
+interface IATETable : IDispatch {
 };
 [
 	object,
@@ -73,7 +73,7 @@ interface ITable : IDispatch {
 	dual,
 	pointer_default(unique)
 ]
-interface ITables : IDispatch {
+interface IATETables : IDispatch {
 };
 [
 	uuid(753D2A23-C6D8-407D-84F8-5E17C90F6E6D),
@@ -85,9 +85,9 @@ library ATEDataTypeLib
 	[
 		uuid(FFA66125-F3AF-4FC6-85A1-CA3267069803)
 	]
-		coclass ATETable
-		{
-			[default] interface ITable;
-		};
+	coclass ATETable
+	{
+		[default] interface IATETable;
+	};
 };
 

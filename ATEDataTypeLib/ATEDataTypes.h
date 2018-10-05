@@ -31,3 +31,11 @@ public:
 	virtual /* [id][propget] */ HRESULT STDMETHODCALLTYPE get_Value( /* [retval][out] */ DOUBLE *pVal);
 };
 
+class CATETable :
+	public IATETable
+{
+public:
+	CATETable();
+	~CATETable();
+};
+
