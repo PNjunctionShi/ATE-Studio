@@ -79,6 +79,9 @@
     <None Include="registry.bin">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="Unit.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="ATEDataTypeLib.idl">

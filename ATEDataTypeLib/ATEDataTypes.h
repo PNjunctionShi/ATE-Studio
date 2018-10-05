@@ -10,8 +10,10 @@
 
 using namespace ATL;
 
-class CUnit :
-	public IATEBaseData
+class ATL_NO_VTABLE CUnit :
+	public CComObjectRootEx<CComSingleThreadModel>,
+	public CComCoClass<CUnit, &CLSID_Unit>,
+	public IDispatchImpl<IATEBaseData, &IID_IATEBaseData, &LIBID_ATEDataTypeLib, /*wMajor =*/ 1, /*wMinor =*/ 0>
 {
 private:
 	class CinitUnitTable
@@ -28,6 +30,27 @@ private:
 public:
 	CUnit();
 	~CUnit();
+
+	DECLARE_REGISTRY_RESOURCEID(IDR_UNIT)
+
+
+	BEGIN_COM_MAP(CUnit)
+		COM_INTERFACE_ENTRY(IATEBaseData)
+		COM_INTERFACE_ENTRY(IDispatch)
+	END_COM_MAP()
+
+
+
+	DECLARE_PROTECT_FINAL_CONSTRUCT()
+
+	HRESULT FinalConstruct()
+	{
+		return S_OK;
+	}
+
+	void FinalRelease()
+	{
+	}
 
 public:
 	virtual /* [id][propget] */ HRESULT STDMETHODCALLTYPE get_StrValue( /* [retval][out] */ BSTR *pVal);
@@ -73,3 +96,4 @@ public:
 };
 
 OBJECT_ENTRY_AUTO(__uuidof(ATETable), CATETable)
+//OBJECT_ENTRY_AUTO(__uuidof(Unit), CUnit)

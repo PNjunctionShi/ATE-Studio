@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "ATEDataTypes.h"
+#include "atlcoll.h"
 
+using namespace ATL;
 CUnit::CinitUnitTable CUnit::m_UnitTable;
 CUnit::CinitUnitTable::CinitUnitTable()
 {
@@ -49,7 +51,7 @@ HRESULT CUnit::get_StrValue(BSTR * pVal)
 
 HRESULT CUnit::put_StrValue(BSTR newVal)
 {
-	m_bstrValue.Attach(newVal);
+	m_bstrValue=newVal;
 	return S_OK;
 }
 

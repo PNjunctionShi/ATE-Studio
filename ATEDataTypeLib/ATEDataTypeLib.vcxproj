@@ -266,6 +266,7 @@
     <None Include="ATEDataTypeLib.rgs" />
     <None Include="ATETable.rgs" />
     <None Include="registry.bin" />
+    <None Include="Unit.rgs" />
   </ItemGroup>
   <ItemGroup>
     <Midl Include="ATEDataTypeLib.idl" />

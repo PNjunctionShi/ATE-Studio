@@ -89,6 +89,13 @@ library ATEDataTypeLib
 	coclass ATETable
 	{
 		[default] interface IATETable;
+	}; 
+	[
+		uuid(3108B14F-43F2-4B8D-A11E-92621F5CD6BB)
+	]
+	coclass Unit
+	{
+		[default] interface IATEBaseData;
 	};
 };
 
