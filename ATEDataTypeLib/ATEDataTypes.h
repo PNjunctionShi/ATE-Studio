@@ -68,6 +68,8 @@ public:
 
 public:
 
+
+	STDMETHOD(debug1)(BSTR* val);
 };
 
 OBJECT_ENTRY_AUTO(__uuidof(ATETable), CATETable)

@@ -66,6 +66,7 @@ interface IATEColumns : IDispatch {
 	pointer_default(unique)
 ]
 interface IATETable : IDispatch {
+	[id(1)] HRESULT debug1([out, retval] BSTR* val);
 };
 [
 	object,

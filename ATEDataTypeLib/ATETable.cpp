@@ -2,11 +2,10 @@
 #include "ATEDataTypes.h"
 
 
-CATETable::CATETable()
+STDMETHODIMP CATETable::debug1(BSTR* val)
 {
+	*val = ::SysAllocString(L"Hello World!");
+
+	return S_OK;
 }
 
-
-CATETable::~CATETable()
-{
-}

@@ -1,19 +1,19 @@
 HKCR
 {
-	ATEData.Table.1 = s 'TableCo Class'
+	ATEData.ATETable.1 = s 'ATETable Class'
 	{
-		CLSID = s '{9928B841-B4D8-4858-B7DF-919631D3828E}'
+		CLSID = s '{FFA66125-F3AF-4FC6-85A1-CA3267069803}'
 	}
-	ATEData.Table = s 'TableCo Class'
+	ATEData.ATETable = s 'ATETable Class'
 	{		
-		CurVer = s 'ATEData.Table.1'
+		CurVer = s 'ATEData.ATETable.1'
 	}
 	NoRemove CLSID
 	{
-		ForceRemove {FFA66125-F3AF-4FC6-85A1-CA3267069803} = s 'TableCo Class'
+		ForceRemove {FFA66125-F3AF-4FC6-85A1-CA3267069803} = s 'ATETable Class'
 		{
-			ProgID = s 'ATEData.Table.1'
-			VersionIndependentProgID = s 'ATEData.Table '
+			ProgID = s 'ATEData.ATETable.1'
+			VersionIndependentProgID = s 'ATEData.ATETable'
 			ForceRemove Programmable
 			InprocServer32 = s '%MODULE%'
 			{
