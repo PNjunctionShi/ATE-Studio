@@ -10,6 +10,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATEDataTypeLibPS", "ATEData
 		{DDFF9965-A483-48C7-A58A-7F98CECC0C43} = {DDFF9965-A483-48C7-A58A-7F98CECC0C43}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Demo", "Demo\Demo.vcxproj", "{78F4EF79-5237-49EF-A154-DBE92F50E31B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -30,6 +32,14 @@ Global
 		{E95873BF-592F-4B60-9143-B27D5E663FA1}.Debug|x86.ActiveCfg = Debug|Win32
 		{E95873BF-592F-4B60-9143-B27D5E663FA1}.Release|x64.ActiveCfg = Release|x64
 		{E95873BF-592F-4B60-9143-B27D5E663FA1}.Release|x86.ActiveCfg = Release|Win32
+		{78F4EF79-5237-49EF-A154-DBE92F50E31B}.Debug|x64.ActiveCfg = Debug|x64
+		{78F4EF79-5237-49EF-A154-DBE92F50E31B}.Debug|x64.Build.0 = Debug|x64
+		{78F4EF79-5237-49EF-A154-DBE92F50E31B}.Debug|x86.ActiveCfg = Debug|Win32
+		{78F4EF79-5237-49EF-A154-DBE92F50E31B}.Debug|x86.Build.0 = Debug|Win32
+		{78F4EF79-5237-49EF-A154-DBE92F50E31B}.Release|x64.ActiveCfg = Release|x64
+		{78F4EF79-5237-49EF-A154-DBE92F50E31B}.Release|x64.Build.0 = Release|x64
+		{78F4EF79-5237-49EF-A154-DBE92F50E31B}.Release|x86.ActiveCfg = Release|Win32
+		{78F4EF79-5237-49EF-A154-DBE92F50E31B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

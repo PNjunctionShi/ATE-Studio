@@ -45,6 +45,14 @@ interface IRemarks : IDispatch {
 };
 [
 	object,
+	uuid(43D61594-6ED1-4CBA-9FA2-96737EA29629),
+	dual,
+	pointer_default(unique)
+]
+interface IColumn : IDispatch {
+};
+[
+	object,
 	uuid(38D1DC1A-C92A-4D04-AEDF-FFC5C1CA6E09),
 	dual,
 	pointer_default(unique)
@@ -71,8 +79,15 @@ interface ITables : IDispatch {
 	uuid(753D2A23-C6D8-407D-84F8-5E17C90F6E6D),
 	version(1.0),
 ]
-library ATEDataTypeLibLib
+library ATEDataTypeLib
 {
-	importlib("stdole2.tlb");
+	importlib("stdole2.tlb");	
+	[
+		uuid(FFA66125-F3AF-4FC6-85A1-CA3267069803)
+	]
+		coclass ATETable
+		{
+			[default] interface ITable;
+		};
 };
 

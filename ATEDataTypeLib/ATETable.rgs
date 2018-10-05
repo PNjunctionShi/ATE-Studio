@@ -1,0 +1,26 @@
+HKCR
+{
+	ATEData.Table.1 = s 'TableCo Class'
+	{
+		CLSID = s '{9928B841-B4D8-4858-B7DF-919631D3828E}'
+	}
+	ATEData.Table = s 'TableCo Class'
+	{		
+		CurVer = s 'ATEData.Table.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {FFA66125-F3AF-4FC6-85A1-CA3267069803} = s 'TableCo Class'
+		{
+			ProgID = s 'ATEData.Table.1'
+			VersionIndependentProgID = s 'ATEData.Table '
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{753D2A23-C6D8-407D-84F8-5E17C90F6E6D}'
+			Version = s '1.0'
+		}
+	}
+}

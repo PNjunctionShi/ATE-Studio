@@ -70,6 +70,12 @@
     <None Include="ATEDataTypeLib.def">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="ATETable.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="registry.bin">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="ATEDataTypeLib.idl">

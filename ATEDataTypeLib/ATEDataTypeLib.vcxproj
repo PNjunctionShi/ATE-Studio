@@ -263,6 +263,8 @@
   <ItemGroup>
     <None Include="ATEDataTypeLib.def" />
     <None Include="ATEDataTypeLib.rgs" />
+    <None Include="ATETable.rgs" />
+    <None Include="registry.bin" />
   </ItemGroup>
   <ItemGroup>
     <Midl Include="ATEDataTypeLib.idl" />
