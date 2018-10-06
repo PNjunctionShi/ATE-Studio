@@ -37,6 +37,9 @@
     <ClCompile Include="ATETable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Digit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -80,6 +83,9 @@
       <Filter>Resource Files</Filter>
     </None>
     <None Include="Unit.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Digit.rgs">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

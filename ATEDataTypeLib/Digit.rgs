@@ -1,0 +1,26 @@
+HKCR
+{
+	ATEData.Digit.1 = s 'Digit Class'
+	{
+		CLSID = s '{5B222910-BEAA-4F8F-B0E9-C7C7F7E1DE22}'
+	}
+	ATEData.Digit = s 'Digit Class'
+	{		
+		CurVer = s 'ATEData.Digit.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {5B222910-BEAA-4F8F-B0E9-C7C7F7E1DE22} = s 'Digit Class'
+		{
+			ProgID = s 'ATEData.Digit.1'
+			VersionIndependentProgID = s 'ATEData.Digit'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{753D2A23-C6D8-407D-84F8-5E17C90F6E6D}'
+			Version = s '1.0'
+		}
+	}
+}

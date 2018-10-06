@@ -7,6 +7,15 @@
 import "oaidl.idl";
 import "ocidl.idl";
 
+typedef [helpstring("ATE Base Data Types")]
+enum {
+	[helpstring("Unit")]dsUnit = 1,
+	[helpstring("Digit")]dsData = 2,
+	[helpstring("Spec Name")]dsSpec = 3,
+	[helpstring("Operator")]dsOper = 4,
+	[helpstring("String")]dsStr = 5
+} dsBaseDataType;
+
 [
 	object,
 	uuid(F5A367FA-9E81-4359-904C-9F0F4CB0E156),
@@ -17,6 +26,10 @@ interface IATEBaseData : IDispatch {
 	[propget, id(1)] HRESULT StrValue([out, retval] BSTR* pVal);
 	[propput, id(1)] HRESULT StrValue([in] BSTR newVal);
 	[propget, id(2)] HRESULT Value([out, retval] DOUBLE* pVal);
+	[propget, id(3)] HRESULT SubLeft([out, retval] IATEBaseData** pVal);
+	[propget, id(4)] HRESULT SubRight([out, retval] IATEBaseData** pVal);
+	[id(5)] HRESULT SetSubLeft([in] dsBaseDataType DataType, [out, retval] IATEBaseData** pSubLeft);
+	[id(6)] HRESULT SetSubRight([in] dsBaseDataType DataType, [out, retval] IATEBaseData** pSubRight);
 };
 interface IRemarks;
 [
@@ -94,6 +107,13 @@ library ATEDataTypeLib
 		uuid(3108B14F-43F2-4B8D-A11E-92621F5CD6BB)
 	]
 	coclass Unit
+	{
+		[default] interface IATEBaseData;
+	};
+	[
+		uuid(5B222910-BEAA-4F8F-B0E9-C7C7F7E1DE22)
+	]
+	coclass Digit
 	{
 		[default] interface IATEBaseData;
 	};

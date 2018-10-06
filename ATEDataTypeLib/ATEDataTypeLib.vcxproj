@@ -225,6 +225,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="ATETable.cpp" />
+    <ClCompile Include="Digit.cpp" />
     <ClCompile Include="dllmain.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -265,6 +266,7 @@
     <None Include="ATEDataTypeLib.def" />
     <None Include="ATEDataTypeLib.rgs" />
     <None Include="ATETable.rgs" />
+    <None Include="Digit.rgs" />
     <None Include="registry.bin" />
     <None Include="Unit.rgs" />
   </ItemGroup>

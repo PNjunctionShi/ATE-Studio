@@ -60,3 +60,27 @@ HRESULT CUnit::get_Value(DOUBLE * pVal)
 	*pVal= m_UnitTable.mUnitTable.Lookup(m_bstrValue)->m_value;
 	return S_OK;
 }
+
+HRESULT CUnit::get_SubLeft(IATEBaseData ** pVal)
+{
+	*pVal = NULL;
+	return S_OK;
+}
+
+HRESULT CUnit::get_SubRight(IATEBaseData ** pVal)
+{
+	*pVal = NULL;
+	return S_OK;
+}
+
+STDMETHODIMP CUnit::SetSubLeft(dsBaseDataType DataType, IATEBaseData ** pSubLeft)
+{
+	*pSubLeft = NULL;
+	return S_OK;
+}
+
+STDMETHODIMP CUnit::SetSubRight(dsBaseDataType DataType, IATEBaseData ** pSubRight)
+{
+	*pSubRight = NULL;
+	return S_OK;
+}
