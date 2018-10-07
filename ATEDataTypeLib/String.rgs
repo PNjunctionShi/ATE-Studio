@@ -1,0 +1,26 @@
+HKCR
+{
+	ATEData.String.1 = s 'String Class'
+	{
+		CLSID = s '{B2826957-0EAA-4504-9887-81B129E6474D}'
+	}
+	ATEData.String = s 'String Class'
+	{		
+		CurVer = s 'ATEData.String.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B2826957-0EAA-4504-9887-81B129E6474D} = s 'String Class'
+		{
+			ProgID = s 'ATEData.String.1'
+			VersionIndependentProgID = s 'ATEData.String'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{753D2A23-C6D8-407D-84F8-5E17C90F6E6D}'
+			Version = s '1.0'
+		}
+	}
+}

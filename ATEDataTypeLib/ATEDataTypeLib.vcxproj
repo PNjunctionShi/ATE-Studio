@@ -247,6 +247,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="String.cpp" />
     <ClCompile Include="Unit.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -270,6 +271,7 @@
     <None Include="Digit.rgs" />
     <None Include="Operator.rgs" />
     <None Include="registry.bin" />
+    <None Include="String.rgs" />
     <None Include="Unit.rgs" />
   </ItemGroup>
   <ItemGroup>

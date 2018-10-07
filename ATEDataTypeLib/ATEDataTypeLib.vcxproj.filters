@@ -43,6 +43,9 @@
     <ClCompile Include="Operator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="String.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -92,6 +95,9 @@
       <Filter>Resource Files</Filter>
     </None>
     <None Include="Operator.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="String.rgs">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

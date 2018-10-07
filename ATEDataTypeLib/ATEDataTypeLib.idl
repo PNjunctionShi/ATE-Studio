@@ -133,5 +133,12 @@ library ATEDataTypeLib
 	{
 		[default] interface IATEBaseData;
 	};
+	[
+		uuid(B2826957-0EAA-4504-9887-81B129E6474D)
+	]
+	coclass String
+	{
+		[default] interface IATEBaseData;
+	};
 };
 
