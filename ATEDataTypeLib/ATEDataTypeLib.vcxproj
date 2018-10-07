@@ -209,6 +209,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ATEColumn.cpp" />
     <ClCompile Include="ATEDataTypeLib.cpp" />
     <ClCompile Include="ATEDataTypeLib_i.c">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>

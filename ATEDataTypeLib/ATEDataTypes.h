@@ -271,6 +271,9 @@ public:
 		COM_INTERFACE_ENTRY(IATEColumn)
 		COM_INTERFACE_ENTRY(IDispatch)
 	END_COM_MAP()
+
+public:
+	STDMETHOD(SetSize)(LONG n);
 };
 
 ///////以上为ATE Column定义///////////////////
