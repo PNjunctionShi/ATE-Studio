@@ -1,0 +1,26 @@
+HKCR
+{
+	ATEData.Operator.1 = s 'Operator Class'
+	{
+		CLSID = s '{E70C13FD-A527-4C25-84E9-541D121747F6}'
+	}
+	ATEData.Operator = s 'Operator Class'
+	{		
+		CurVer = s 'ATEData.Operator.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E70C13FD-A527-4C25-84E9-541D121747F6} = s 'Operator Class'
+		{
+			ProgID = s 'ATEData.Operator.1'
+			VersionIndependentProgID = s 'ATEData.Operator'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{753D2A23-C6D8-407D-84F8-5E17C90F6E6D}'
+			Version = s '1.0'
+		}
+	}
+}

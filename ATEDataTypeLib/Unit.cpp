@@ -45,7 +45,7 @@ CUnit::~CUnit()
 
 HRESULT CUnit::get_StrValue(BSTR * pVal)
 {
-	pVal = &m_bstrValue;
+	*pVal = m_bstrValue;
 	return S_OK;
 }
 

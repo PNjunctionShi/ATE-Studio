@@ -16,6 +16,15 @@ enum {
 	[helpstring("String")]dsStr = 5
 } dsBaseDataType;
 
+typedef [helpstring("Operator Types")]
+enum {
+	[helpstring("Plus")]dsPlus = 1,
+	[helpstring("Substract")]dsSub = 2,
+	[helpstring("Multiply")]dsMul = 3,
+	[helpstring("Divide")]dsDiv = 4,
+	[helpstring("Power")]dsPow = 5
+} dsOperatorType;
+
 [
 	object,
 	uuid(F5A367FA-9E81-4359-904C-9F0F4CB0E156),
@@ -114,6 +123,13 @@ library ATEDataTypeLib
 		uuid(5B222910-BEAA-4F8F-B0E9-C7C7F7E1DE22)
 	]
 	coclass Digit
+	{
+		[default] interface IATEBaseData;
+	};
+	[
+		uuid(E70C13FD-A527-4C25-84E9-541D121747F6)
+	]
+	coclass Operator
 	{
 		[default] interface IATEBaseData;
 	};
