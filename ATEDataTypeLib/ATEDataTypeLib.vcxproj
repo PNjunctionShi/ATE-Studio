@@ -265,6 +265,8 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ATEColumn.rgs" />
+    <None Include="ATEColumns.rgs" />
     <None Include="ATEDataTypeLib.def" />
     <None Include="ATEDataTypeLib.rgs" />
     <None Include="ATETable.rgs" />
